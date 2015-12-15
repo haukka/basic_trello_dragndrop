@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Sortable div and list</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./application.js"></script>
+  </head>
+  <body>
+    <ul class="nav nav-pills" style="margin-left:5px; margin-bottom:5px;">
+      <li role="presentation" class="add_list"><a href="#" class="btn btn-success">Ajouter une liste</a></li>
+    </ul>
+    <div id="dragndrop_elem">
+      <div id="containment" class="row">
+	<div class="col-md-4 sortable_div">
+	  <ul class="sortable-list">
+	    <li class="sortable-item">
+	      Sortable item A
+	      <span class="glyphicon glyphicon-remove remove_button">
+	      </span>
+	    </li>
+	    <li class="sortable-item">
+	      Sortable item B
+	      <span class="glyphicon glyphicon-remove remove_button">
+	      </span>
+	    </li>
+	  </ul>
+	  <button type="button" class="btn btn-success create_item">
+	    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Ajouter un item
+	  </button>
+	</div>
+	<div class="col-md-4 sortable_div">
+	  <ul class="sortable-list">
+	    <li class="sortable-item">
+	      Sortable item C
+	      <span class="glyphicon glyphicon-remove remove_button">
+	      </span>
+	    </li>
+	    <li class="sortable-item">
+	      Sortable item D
+	      <span class="glyphicon glyphicon-remove remove_button">
+	      </span>
+	    </li>
+	  </ul>
+	  <button type="button" class="btn btn-success create_item">
+	    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Ajouter un item
+	  </button>
+	</div>
+	<div class="col-md-4 sortable_div">
+	  <ul class="sortable-list">
+	    <li class="sortable-item">
+	      Sortable item E
+	      <span class="glyphicon glyphicon-remove remove_button">
+	      </span>
+	    </li>
+	  </ul>
+	  <button type="button" class="btn btn-success create_item">
+	    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Ajouter un item
+	  </button>
+	</div>
+	<div class="clear"></div>
+      </div>
+    </div>		
+  </body>
+</html>
